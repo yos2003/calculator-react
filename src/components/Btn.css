@@ -1,0 +1,34 @@
+
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: #242424;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  
+  
+.container > div:nth-child(4n) {
+    background-color: #F79505;
+  }
+
+.container {
+    padding: 19px;
+    display: grid;
+    grid-gap: 9px;
+    grid-template-columns: repeat(4, 75px);
+    grid-row: auto;
+}
+.avg,.avg-side,.horizontal{
+    border-radius: 1rem;
+}
+.avg{
+    background-color:#e9f0f4 ;
+}
+
+.horizontal{
+    grid-column: span 2;
+    background-color: #4BD086;
+}

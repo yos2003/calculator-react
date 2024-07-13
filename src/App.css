@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
 body,html{
   height: 100%;
   background-color:#f3f4f6 ;
@@ -6,11 +9,15 @@ body,html{
   display: grid;
   justify-content: center;
   align-content: center;
+  font-family: 'Roboto', sans-serif;
+
 }
 .box{
-  width: 400px;
+  width: 370px;
   height: 600px;
   box-shadow: 20px 23px 18px -15px rgba(0,0,0,0.1);
   border-radius: 2rem;
   background-color: #fff;
+  display: grid;
+  grid-template-rows: 170px auto;
 }

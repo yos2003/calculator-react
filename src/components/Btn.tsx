@@ -1,10 +1,18 @@
+import "./Btn.css";
 
-function Btn () {
+
+interface Props {
+  avg: "avg" | "avg-side" | "horizontal";
+  children:string;
+}
+function Btn({ avg, children }: Props) {
   return (
-    <div className="avg">
-      
-    </div>
-  )
+    <>
+      <div className={avg}>
+        {children}
+      </div>
+    </>
+  );
 }
 
 export default Btn;

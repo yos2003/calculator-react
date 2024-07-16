@@ -1,14 +1,16 @@
 import "./App.css";
 import Btn from "./components/Btn";
 import { useState } from 'react';
-
+import * as math from 'mathjs';
 
 function App() {
-  const [value, setValue]=useState('');
+  const [value, setValue]=useState<string>('');
   const handleClick = (btnValue: string)=>{
+    console.log(btnValue);
     if(btnValue === '=') {
       try {
-        setValue(eval(value));
+        const result = math.evaluate(value); 
+        setValue(result.toFixed(2).toString());
       } catch (error) {
         setValue('Error');
       }
@@ -21,7 +23,7 @@ function App() {
   return (
       <div className="box">
         <div className="header">
-          <input type="number" defaultValue={'0'} value={value} readOnly/>
+          <input type="text" value={value} readOnly/>
         </div>
         <div className="container">
           <Btn avg="avg" onClick={handleClick}>C</Btn>

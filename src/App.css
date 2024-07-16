@@ -21,3 +21,9 @@ body,html{
   display: grid;
   grid-template-rows: 170px auto;
 }
+.header > input{
+  border: none;
+  font-size: 100px;
+  width: 310px;
+  margin: 10px 15px;
+}

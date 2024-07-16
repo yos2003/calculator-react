@@ -1,5 +1,5 @@
 
-.container > div {
+.container > button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +10,7 @@
   }
   
   
-.container > div:nth-child(4n) {
+.container > button:nth-child(4n) {
     background-color: #F79505;
   }
 
@@ -23,6 +23,11 @@
 }
 .avg,.avg-side,.horizontal{
     border-radius: 1rem;
+    border: none;
+}
+.container button:hover{
+    background-color: bisque;
+
 }
 .avg{
     background-color:#e9f0f4 ;

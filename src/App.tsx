@@ -2,6 +2,8 @@ import "./App.css";
 import Btn from "./components/Btn";
 import { useState } from 'react';
 import * as math from 'mathjs';
+import { Textfit } from 'react-textfit';
+
 
 function App() {
   const [value, setValue]=useState<string>('');
@@ -22,9 +24,9 @@ function App() {
   };
   return (
       <div className="box">
-        <div className="header">
+        <Textfit className="header">
           <input type="text" value={value} readOnly/>
-        </div>
+        </Textfit>
         <div className="container">
           <Btn avg="avg" onClick={handleClick}>C</Btn>
           <Btn avg="avg" onClick={handleClick}>+-</Btn>

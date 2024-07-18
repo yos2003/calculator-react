@@ -21,9 +21,7 @@ body,html{
   display: grid;
   grid-template-rows: 170px auto;
 }
-input{
-  border: none;
-  font-size: 100px;
-  width: 310px;
+.header{
+  width: 330px;
   margin: 10px 15px;
 }
